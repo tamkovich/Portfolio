@@ -1,0 +1,220 @@
+
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Theme Name :  
+	Version    :  
+	Author     :  
+	Author URI :  
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+	2. COMMONS FOR PAGE DESIGN
+	3. INTRO SECTION
+		INTRO 
+	4. ABOUT SECTION
+		COUNTER SECTION 
+	5. EXPERIENCE SECTION
+	6. PORFOLIO SECTION
+	7. EDUCATION SECTION
+	8. QUOTO SECTION
+	9. SKILLS SECTION
+		LINE PROGRESSBAR 
+	10. FOOTER
+
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/*html{ font-size: 100%; height: 100%; width: 100%; overflow-x: hidden; margin: 0px; 
+	padding: 0px; touch-action: manipulation; }
+
+
+body{ font-size: 16px; font-family: 'Poppins', serif; width: 100%; margin: 0; 
+	font-weight: 400; word-wrap: break-word; color: #333; 
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+
+h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
+
+h1,h2,h3{ font-family: 'Poppins', cursive; }
+
+p{ line-height: 1.6; font-size: 1em; font-weight: 400; color: #777; }
+
+h1{ font-size: 4em; line-height: 1; }
+h2{ font-size: 2.2em; line-height: 1.1; }
+h3{ font-size: 1.8em; }
+h4{ font-size: 1.3em; }
+h5{ font-size: 1em; }
+h6{ font-size: .9em; letter-spacing: 1px; }*/
+
+a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; 
+	-webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ text-decoration: none; color: #FFA804; }
+
+b{ font-weight: 600; }
+
+img{ width: 100%; }
+
+li{ list-style: none; display: inline-block; }
+
+span{ display: inline-block; }
+
+button{ outline: 0; border: 0; background: none; cursor: pointer; }
+
+.icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
+
+b.max-bold{ font-weight: 700; }
+
+
+
+/* ---------------------------------
+2. COMMONS FOR PAGE DESIGN
+--------------------------------- */
+
+/*.section{ padding: 100px 0 50px; border-bottom: 1px solid #ddd; }
+
+.section .heading{ margin-bottom: 60px; display: inline-block; }
+
+.section .heading:before{ content:''; height: 10px; width: 50px; border-radius: 5px;
+	margin: 0 auto 20px; display: block; background: #FFA804; }*/
+	
+.margin-t-10{ margin-top: 10px; }
+.margin-t-30{ margin-top: 30px; }
+
+.margin-b-20{ margin-bottom: 20px; }
+.margin-b-30{ margin-bottom: 30px; }
+.margin-b-50{ margin-bottom: 50px; }
+
+.margin-tb-30{ margin-top: 30px; margin-bottom: 30px; }
+.margin-tb-50{ margin-top: 50px; margin-bottom: 50px; }
+
+.center-text{ text-align: center; }
+
+/* ---------------------------------
+4. ABOUT SECTION
+--------------------------------- */
+
+/* ---------------------------------
+5. EXPERIENCE SECTION
+--------------------------------- */
+
+.experience .list > li{ display: block; position: relative; margin-bottom: 10px; }
+
+.experience .list > li > span{ position: relative; padding-left: 20px; }
+
+.experience .list > li span:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
+	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #555; }
+
+	
+
+/* ---------------------------------
+6. PORFOLIO SECTION
+--------------------------------- */
+
+/*.portfolio-section .portfolioContainer{ margin-left: -15px; margin-right: -15px; }*/
+
+.portfolio-section .p-item{ width: 25%; padding: 0 7.5px 0px; margin-top: 15px; }
+
+.portfolio-section .p-item a{ display: inline-block; position: relative; }
+
+/* ---------------------------------
+8. QUOTO SECTION
+--------------------------------- */
+
+.quoto-section{ padding: 80px 0; position: relative; background-size: cover; 
+	z-index: 1; background-image: url(../../images/slider-4-1920x600.jpg); color: #fff; }
+
+.quoto-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
+	right: 0; background: rgba(0,0,0, .8); }
+	
+.quoto-section .icon{ margin-bottom: 20px; height: 40px; width: 40px; line-height: 40px; 
+	border-radius: 30px; background: #FFAB00; color: #fff; }
+
+	
+
+/* ---------------------------------
+9. SKILLS SECTION
+--------------------------------- */
+
+.skills-section .expert{ margin-top: 10px; display: inline-block; padding: 1px 25px 0; 
+	border-radius: 5px; background: #FFAB00; color: #fff; }
+
+	
+/* LINE PROGRESSBAR */
+	
+.line-progress{ position: relative; padding-bottom: 25px; }
+
+.line-progress .progressbar-text{ position: absolute; bottom: 0; right: 0; font-size: 1.1em; 
+	font-weight: 500; color: #777!important; }
+
+.line-progress .progress-title{ position: absolute; bottom: 0; left: 0; color: #777; }
+
+
+/* REDIAL PROGRESS SECTION */
+
+.radial-progress-section{ border: 0; position: relative; background-size: cover; 
+	z-index: 1; background-image: url(../../images/slider-4-1920x600.jpg); color: #fff; }
+
+.radial-progress-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; 
+	left: 0; right: 0; background: rgba(0,0,0, .8); }
+	
+.radial-progress{ position: relative; max-width: 170px; margin: 0 auto; }
+
+.radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500; 
+	padding-bottom: 25px!important; color: #FFAB00!important; }
+
+.radial-progress .progressbar-text:after{ content:'%'; }
+
+
+/* ACCORDIANS */
+
+.panel-area .panel-title{ padding: 10px 20px; cursor: pointer; position: relative; color: #fff;
+	border-radius: 3px; background: #FFAD01; color: #fff; }
+
+.panel-area .panel-desc{ max-height: 0; overflow: hidden; opacity: 0;
+	-webkit-transition: all .05s, opacity .25s .1s, -webkit-transform .1s; 
+	transition: all .05s, opacity .25s .1s, transform .1s; 
+	-webkit-transform: scaleY(0); transform: scaleY(0); 
+	-webkit-transform-origin: top; transform-origin: top; }
+
+.panel-area .panel-title .icon{ float: right; font-size: .7em; margin-top: 5px; }
+
+.panel-area .panel-title.active{ background: #28023D; }
+
+.panel-area .panel-title.active + .panel-desc{ opacity: 1; padding: 20px 20px 0; max-height: 300px; 
+	-webkit-transform: scaleY(1); transform: scaleY(1); }
+
+.panel-area .panel-title .icon.plus,
+.panel-area .panel-title.active .icon.minus{ display: block; }
+
+.panel-area .panel-title .icon.minus,
+.panel-area .panel-title.active .icon.plus{ display: none; }
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
